@@ -6,7 +6,7 @@ import json
 CONSUMER_KEY    = ""
 CONSUMER_SECRET = ""
 ACCESS_KEY      = ""
-ACCESS_SECRET   = "
+ACCESS_SECRET   = ""
 
 consumer = oauth.Consumer(key=CONSUMER_KEY, secret=CONSUMER_SECRET)
 access_token = oauth.Token(key=ACCESS_KEY, secret=ACCESS_SECRET)
