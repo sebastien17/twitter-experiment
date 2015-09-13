@@ -40,11 +40,11 @@ for id_str in ids_str:
                 for tweet in tweets:
                     print tweet
                     if max_id==0:
-                        max_id=int(tweet['id'])
+                        max_id=int(tweet['id'])-1
                     elif max_id>int(tweet['id']):
                         max_id=int(tweet['id'])-1
                     created=tweet['created_at']
-                print created
+
                 print 'id rescue: wait '+str((15*60)/int(response['x-rate-limit-limit']))+' seconds'
                 time.sleep((15*60)/int(response['x-rate-limit-limit']))
 
